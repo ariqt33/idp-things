@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', sans-serif;
+  background: url('image10.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* Navbar Styles (reused from upload_photo page) */
+.navbar {
+  width: 100%;
+  padding: 15px 50px;
+  background: #edc66c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 18px;
+  color: black;
+}
+
+.logo-text span {
+  font-size: 14px;
+  color: #444;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+  color: goldenrod;
+}
+
+.btn-yellow {
+  background: #dedb20;
+  color: #000;
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FAQ Content Section */
+.faq-section, .answer-section {
+  margin: 0 auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.faq-section h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.faq-section h1 span {
+  color: #444;
+}
+
+.faq-item {
+  cursor: pointer;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.2s;
+}
+
+.faq-item:hover {
+  background-color: #f7f7f7;
+}
+
+.faq-item p {
+  font-size: 18px;
+  color: #000;
+}
+
+/* Answer Pages */
+.answer-section h2 {
+  font-size: 24px;
+  color: #f5b63b;
+  margin-bottom: 15px;
+}
+
+.answer-section p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.answer-section a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.answer-section a:hover {
+  text-decoration: underline;
+}
