@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DermaCare FAQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar with uploaded styles -->
+  <header class="navbar">
+    <div class="logo-section">
+      <img src="logo.png" alt="DermaCare Logo" class="logo-img">
+      <div class="logo-text">
+        DermaCare<br><span>Analyze & Consulting</span>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Skin Health</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#" class="active">FAQ</a></li>
+      </ul>
+      <a href="#" class="btn-yellow">Try DermaCare</a>
+    </nav>
+  </header>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" style="margin-top: 120px; padding: 40px; max-width: 800px; background: rgba(255,255,255,0.95); border-radius: 16px;">
+    <div class="faq-header" style="display: flex; align-items: center; margin-bottom: 20px;">
+      <span style="font-size: 24px; margin-right: 10px;">❓</span>
+      <span style="font-size: 18px; font-weight: bold;">FAQ</span>
+    </div>
+    <h1 style="font-size: 32px; color: #222; margin-bottom: 30px;">Have Questions?<br><span style="color: #444;">Get Answers</span></h1>
+
+    <div class="faq-item" onclick="showAnswer('dermaCare')" style="cursor: pointer; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding: 10px 0;">
+      <p style="font-size: 18px;">What is a DermaCare?</p>
+    </div>
+
+    <div class="faq-item" onclick="showAnswer('whoShouldUse')" style="cursor: pointer; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding: 10px 0;">
+      <p style="font-size: 18px;">Who should use DermaCare?</p>
+    </div>
+  </section>
+
+  <!-- Answer 1 -->
+  <section class="answer-section" id="dermaCare" style="display: none; padding: 40px; max-width: 800px; background: rgba(255,255,255,0.95); border-radius: 16px;">
+    <a href="#" onclick="goBack()" style="display: inline-block; margin-bottom: 20px;">← Back</a>
+    <h2 style="color: #f5b63b;">What is a DermaCare?</h2>
+    <p>
+      DermaCare is a mobile application powered by AI, created to aid in the early detection of common skin diseases through image analysis.
+      Utilizing advanced deep learning techniques, DermaCare offers users preliminary evaluations based on clinically significant features,
+      providing a quick and convenient way to support skin health monitoring.
+    </p>
+    <p>
+      Designed with a strong emphasis on accuracy, ease of use, and accessibility, DermaCare is a valuable resource for both individuals and
+      healthcare professionals, especially in areas where access to dermatological care is limited. The app helps users make informed decisions
+      by offering insights that indicate when a professional medical consultation may be necessary.
+    </p>
+  </section>
+
+  <!-- Answer 2 -->
+  <section class="answer-section" id="whoShouldUse" style="display: none; padding: 40px; max-width: 800px; background: rgba(255,255,255,0.95); border-radius: 16px;">
+    <a href="#" onclick="goBack()" style="display: inline-block; margin-bottom: 20px;">← Back</a>
+    <h2 style="color: #f5b63b;">Who should use DermaCare?</h2>
+    <p>
+      DermaCare is suitable for a wide range of users, including individuals who want to monitor their skin health, those experiencing unfamiliar skin symptoms,
+      and people living in areas with limited access to dermatologists.
+    </p>
+    <p>
+      Additionally, healthcare professionals can use DermaCare as a supporting tool to quickly assess patient skin conditions and recommend follow-up care
+      when needed. Whether you're concerned about a mole, rash, or other visible skin issue, DermaCare offers a user-friendly platform to help you take
+      the first step toward better skin health.
+    </p>
+  </section>
+
+  <script>
+    function showAnswer(id) {
+      document.querySelector('.faq-section').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function goBack() {
+      document.querySelector('.faq-section').style.display = 'block';
+      document.querySelectorAll('.answer-section').forEach(el => el.style.display = 'none');
+    }
+  </script>
+
+</body>
+</html>
